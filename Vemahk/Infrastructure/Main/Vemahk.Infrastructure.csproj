@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  
+  <PropertyGroup>  
+    <Version>0.0.1</Version>
+    <PackageId>Vemahk.Infrastructure</PackageId>
+    <Title>Vemahk.Infrastructure</Title>
+    <Authors>Vemahk</Authors>
+    <Description>Vemahk.Infrastructure.Description</Description>
+    <PackageProjectUrl>https://github.com/Vemahk/dotnet-foundations</PackageProjectUrl>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Kernel\Main\Vemahk.Kernel.csproj" />
+  </ItemGroup>
+</Project>

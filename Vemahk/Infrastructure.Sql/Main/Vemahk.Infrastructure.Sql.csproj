@@ -12,4 +12,12 @@
     <Description>Vemahk.Infrastructure.Sql.Description</Description>
     <PackageProjectUrl>https://github.com/Vemahk/dotnet-foundations</PackageProjectUrl>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Main\Vemahk.Infrastructure.csproj" />
+  </ItemGroup>
 </Project>
