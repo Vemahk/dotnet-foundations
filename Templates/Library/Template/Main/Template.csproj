@@ -10,5 +10,6 @@
     <Title>Template</Title>
     <Authors>Vemahk</Authors>
     <Description>Template.Description</Description>
+    <PackageProjectUrl>https://github.com/Vemahk/dotnet-foundations</PackageProjectUrl>
   </PropertyGroup>
 </Project>

@@ -5,11 +5,12 @@
   </PropertyGroup>
   
   <PropertyGroup>  
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <PackageId>Vemahk.Kernel</PackageId>
     <Title>Vemahk.Kernel</Title>
     <Authors>Vemahk</Authors>
     <Description>Vemahk.Kernel.Description</Description>
+    <PackageProjectUrl>https://github.com/Vemahk/dotnet-foundations</PackageProjectUrl>
   </PropertyGroup>
   
   <ItemGroup>

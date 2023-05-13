@@ -10,5 +10,6 @@
     <Title>Vemahk.Infrastructure.Sql</Title>
     <Authors>Vemahk</Authors>
     <Description>Vemahk.Infrastructure.Sql.Description</Description>
+    <PackageProjectUrl>https://github.com/Vemahk/dotnet-foundations</PackageProjectUrl>
   </PropertyGroup>
 </Project>

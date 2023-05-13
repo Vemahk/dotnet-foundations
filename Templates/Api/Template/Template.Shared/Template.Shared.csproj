@@ -3,5 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+    <PackageId>Template.Api.Shared</PackageId>
+    <Title>Template.Api.Shared</Title>
+    <Authors>Vemahk</Authors>
+    <Description>Template.Api.Shared.Description</Description>
+    <PackageProjectUrl>https://github.com/Vemahk/dotnet-foundations</PackageProjectUrl>
+  </PropertyGroup>
 
 </Project>
