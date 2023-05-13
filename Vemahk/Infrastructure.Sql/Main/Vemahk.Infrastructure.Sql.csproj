@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  
+  <PropertyGroup>  
+    <Version>0.0.1</Version>
+    <PackageId>Vemahk.Infrastructure.Sql</PackageId>
+    <Title>Vemahk.Infrastructure.Sql</Title>
+    <Authors>Vemahk</Authors>
+    <Description>Vemahk.Infrastructure.Sql.Description</Description>
+  </PropertyGroup>
+</Project>

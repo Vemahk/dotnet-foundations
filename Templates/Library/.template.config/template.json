@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Zachary Vemahk",
+  "classifications": [ "Common", "Library" ],
+  "identity": "Vemahk.Library.Template",
+  "name": "Vemahk's Library Template",
+  "shortName": "vlib",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "Template",
+  "perferNameDirectory": true
+}
