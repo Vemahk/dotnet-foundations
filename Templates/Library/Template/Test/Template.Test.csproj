@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Main\Template.csproj" />
+    <ProjectReference Include="..\src\Template.csproj" />
   </ItemGroup>
 
 </Project>

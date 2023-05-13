@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Main\Vemahk.Kernel.csproj" />
+    <ProjectReference Include="..\src\Vemahk.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

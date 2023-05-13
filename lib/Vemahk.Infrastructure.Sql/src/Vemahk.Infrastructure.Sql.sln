@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sql",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sql.Test", "..\Test\Vemahk.Infrastructure.Sql.Test.csproj", "{64EAB4B7-F808-4EB3-9A32-CCA6E74088D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Kernel", "..\..\Kernel\Main\Vemahk.Kernel.csproj", "{87A8C965-B2BA-490F-9302-065674CA7D8A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure", "..\..\Infrastructure\Main\Vemahk.Infrastructure.csproj", "{1B94388F-87CD-49CD-9A07-2F606E4EB9FA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{876A74E8-DC79-4D7C-B134-746AA7DAB48C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure", "..\..\Vemahk.Infrastructure\src\Vemahk.Infrastructure.csproj", "{6B2AF1A8-1FBD-4BF8-8CC7-15F09FE193BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Kernel", "..\..\Vemahk.Kernel\src\Vemahk.Kernel.csproj", "{CA4D29BE-AA81-41B7-95AE-5104FC7C32AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,21 +27,21 @@ Global
 		{64EAB4B7-F808-4EB3-9A32-CCA6E74088D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64EAB4B7-F808-4EB3-9A32-CCA6E74088D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64EAB4B7-F808-4EB3-9A32-CCA6E74088D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87A8C965-B2BA-490F-9302-065674CA7D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87A8C965-B2BA-490F-9302-065674CA7D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87A8C965-B2BA-490F-9302-065674CA7D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87A8C965-B2BA-490F-9302-065674CA7D8A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B94388F-87CD-49CD-9A07-2F606E4EB9FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B94388F-87CD-49CD-9A07-2F606E4EB9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B94388F-87CD-49CD-9A07-2F606E4EB9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B94388F-87CD-49CD-9A07-2F606E4EB9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2AF1A8-1FBD-4BF8-8CC7-15F09FE193BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2AF1A8-1FBD-4BF8-8CC7-15F09FE193BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2AF1A8-1FBD-4BF8-8CC7-15F09FE193BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2AF1A8-1FBD-4BF8-8CC7-15F09FE193BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4D29BE-AA81-41B7-95AE-5104FC7C32AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4D29BE-AA81-41B7-95AE-5104FC7C32AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4D29BE-AA81-41B7-95AE-5104FC7C32AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4D29BE-AA81-41B7-95AE-5104FC7C32AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{87A8C965-B2BA-490F-9302-065674CA7D8A} = {876A74E8-DC79-4D7C-B134-746AA7DAB48C}
-		{1B94388F-87CD-49CD-9A07-2F606E4EB9FA} = {876A74E8-DC79-4D7C-B134-746AA7DAB48C}
+		{6B2AF1A8-1FBD-4BF8-8CC7-15F09FE193BD} = {876A74E8-DC79-4D7C-B134-746AA7DAB48C}
+		{CA4D29BE-AA81-41B7-95AE-5104FC7C32AB} = {876A74E8-DC79-4D7C-B134-746AA7DAB48C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43AFD709-A629-46A2-918A-6F4B37DE60CC}

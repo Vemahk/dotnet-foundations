@@ -18,6 +18,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\Infrastructure\Main\Vemahk.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Vemahk.Infrastructure\src\Vemahk.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
