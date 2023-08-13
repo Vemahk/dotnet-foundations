@@ -1,4 +1,5 @@
 ﻿using Vemahk.Infrastructure.Sql.Connections;
+using Vemahk.Infrastructure.Interface;
 
 namespace Vemahk.Infrastructure.Sql.Test.Connections;
 
@@ -23,7 +24,7 @@ public class WhenBuildingConnections
         var config = TestHelper.BuildConfigFromJson(configJson);
 
         var provider = new SqlConnectionProvider(config);
-        await using var conn = await provider.OpenConnectionAsync(null, default);
+        await using var conn = await provider.OpenConnectionAsync(null);
     }
 
     [Test]
@@ -45,6 +46,6 @@ public class WhenBuildingConnections
 
         var config = TestHelper.BuildConfigFromJson(configJson);
         var provider = new SqlConnectionProvider(config);
-        await using var conn = await provider.OpenConnectionAsync("LOCAL", default);
+        await using var conn = await provider.OpenConnectionAsync("LOCAL");
     }
 }

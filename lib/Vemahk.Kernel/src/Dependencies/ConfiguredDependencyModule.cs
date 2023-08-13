@@ -1,10 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Vemahk.Kernel.Dependencies
+namespace Vemahk.Kernel.Dependencies;
+
+public abstract class ConfiguredDependencyModule
 {
-    public abstract class ConfiguredDependencyModule
-    {
-        public abstract IServiceCollection Load(IServiceCollection services, IConfiguration config);
-    }
+    public abstract IServiceCollection Load(IServiceCollection services, IConfiguration config);
 }

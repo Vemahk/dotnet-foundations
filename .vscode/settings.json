@@ -1,0 +1,3 @@
+{
+    "dotnet.defaultSolution": "lib/Vemahk.Infrastructure.Sql/src/Vemahk.Infrastructure.Sql.sln"
+}

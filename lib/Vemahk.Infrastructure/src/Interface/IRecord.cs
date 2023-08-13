@@ -1,7 +1,6 @@
-﻿namespace Vemahk.Infrastructure.Interface
+﻿namespace Vemahk.Infrastructure.Interface;
+
+public interface IRecord<T>
 {
-    public interface IRecord<T>
-    {
-        T RecordId { get; }
-    }
+    T RecordId { get; }
 }

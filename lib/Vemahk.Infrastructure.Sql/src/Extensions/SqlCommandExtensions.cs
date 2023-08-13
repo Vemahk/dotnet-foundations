@@ -1,6 +1,5 @@
-﻿namespace Vemahk.Infrastructure.Sql.Extensions
+﻿namespace Vemahk.Infrastructure.Sql.Extensions;
+
+public static class SqlCommandExtensions
 {
-    public static class SqlCommandExtensions
-    {
-    }
 }

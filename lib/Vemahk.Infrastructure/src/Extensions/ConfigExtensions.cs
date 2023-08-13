@@ -1,16 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace Vemahk.Infrastructure.Extensions
-{
-    public static class ConfigExtensions
-    {
-        public static IConfigurationSection GetConnectionsSection(this IConfiguration config)
-        {
-            if (config == null)
-                return null;
+namespace Vemahk.Infrastructure.Extensions;
 
-            var section = config.GetSection("Connections");
-            return section;
-        }
-    }
+public static class ConfigExtensions
+{
+    public static IConfigurationSection GetConnectionsSection(this IConfiguration config) => config.GetSection("Connections");
 }
