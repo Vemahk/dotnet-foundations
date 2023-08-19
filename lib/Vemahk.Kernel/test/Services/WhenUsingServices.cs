@@ -29,7 +29,7 @@ public class WhenUsingServices
         {
         }
 
-        public async Task<Response> DoThing(int i, CancellationToken token)
+        public async Task<Result> DoThing(int i, CancellationToken token)
         {
             try
             {

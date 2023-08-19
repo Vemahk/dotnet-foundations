@@ -12,17 +12,17 @@ public abstract class ServiceBase<TService>
         Logger = logger;
     }
 
-    protected static Response Pass() => Response.Pass();
-    protected static Response<T> Pass<T>(T data) => Response.Pass(data);
-    protected static Response<Optional<T>> Some<T>(T data) where T : notnull => Response.Some(data);
-    protected static Response<Optional<T>> None<T>() where T : notnull => Response.None<T>();
-    protected static FailureResponse Fail(string reason) => Response.Fail(reason);
-    protected static FailureResponse Fail(Response other) => Response.Fail(other);
+    protected static Result Pass() => Result.Pass();
+    protected static Result<T> Pass<T>(T data) => Result.Pass(data);
+    protected static Result<Optional<T>> Some<T>(T data) where T : notnull => Result.Some(data);
+    protected static Result<Optional<T>> None<T>() where T : notnull => Result.None<T>();
+    protected static FailedResult Fail(string reason) => Result.Fail(reason);
+    protected static FailedResult Fail(Result other) => Result.Fail(other);
 
-    protected FailureResponse UnexpectedError(Exception e, string message = "An unexpected error occurred.") => ProcessException(LogLevel.Error, e, message);
-    protected FailureResponse CriticalError(Exception e, string message = "A critical error occurred.") => ProcessException(LogLevel.Critical, e, message);
+    protected FailedResult UnexpectedError(Exception e, string message = "An unexpected error occurred.") => ProcessException(LogLevel.Error, e, message);
+    protected FailedResult CriticalError(Exception e, string message = "A critical error occurred.") => ProcessException(LogLevel.Critical, e, message);
 
-    protected FailureResponse ProcessException(LogLevel logLevel, Exception e, string? message)
+    protected FailedResult ProcessException(LogLevel logLevel, Exception e, string? message)
     {
         if(string.IsNullOrWhiteSpace(message))
             Logger.Log(logLevel, e, string.Empty);

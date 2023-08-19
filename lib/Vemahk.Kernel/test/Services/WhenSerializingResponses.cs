@@ -13,30 +13,30 @@ public class WhenSerializingResponses
     [Test]
     public void ThenSuccessResponseSerializesAndDeserializes()
     {
-        var response = Response.Pass();
+        var response = Result.Pass();
 
         var newResponse = JsonCopy(response);
 
-        Assert.That(response.Success, Is.EqualTo(newResponse.Success), nameof(Response.Success));
-        Assert.That(response.Message, Is.EqualTo(newResponse.Message), nameof(Response.Message));
+        Assert.That(response.Success, Is.EqualTo(newResponse.Success), nameof(Result.Success));
+        Assert.That(response.Message, Is.EqualTo(newResponse.Message), nameof(Result.Message));
 
         const string message = "Bad times.";
-        response = Response.Fail(message);
+        response = Result.Fail(message);
         newResponse = JsonCopy(response);
 
-        Assert.That(response.Success, Is.EqualTo(newResponse.Success), nameof(Response.Success));
-        Assert.That(response.Message, Is.EqualTo(newResponse.Message), nameof(Response.Message));
+        Assert.That(response.Success, Is.EqualTo(newResponse.Success), nameof(Result.Success));
+        Assert.That(response.Message, Is.EqualTo(newResponse.Message), nameof(Result.Message));
     }
 
     [Test]
     public void ThenResponseWithDataSerializesAndDeserializes()
     {
-        var response = Response.Pass(5);
+        var response = Result.Pass(5);
         var newResponse = JsonCopy(response);
         CompareResponses(newResponse, response);
 
         const string message = "Bad times.";
-        response = Response.Fail(message);
+        response = Result.Fail(message);
         newResponse = JsonCopy(response);
         CompareResponses(newResponse, response);
     }
@@ -44,12 +44,12 @@ public class WhenSerializingResponses
     [Test]
     public void ThenResponseWithNullableReferenceTypeComplies()
     {
-        Response<Optional<string>> response = Response.None<string>();
+        Result<Optional<string>> response = Result.None<string>();
         var newResponse = JsonCopy(response);
         CompareResponses(newResponse, response);
 
         const string data = "Hello, World!";
-        response = Response.Some(data);
+        response = Result.Some(data);
         newResponse = JsonCopy(response);
         CompareResponses(newResponse, response);
     }
@@ -57,14 +57,14 @@ public class WhenSerializingResponses
     [Test]
     public void ThenResponseWithNullableValueTypeComplies()
     {
-        Response<Optional<int>> response = Response.None<int>();
+        Result<Optional<int>> response = Result.None<int>();
         Assert.That(response.Data.HasValue, Is.False, "respone.Data 1");
 
         var newResponse = JsonCopy(response);
         CompareResponses(newResponse, response);
 
         const int data = 5;
-        response = Response.Some(data);
+        response = Result.Some(data);
         newResponse = JsonCopy(response);
         CompareResponses(newResponse, response);
     }
@@ -78,10 +78,10 @@ public class WhenSerializingResponses
         return newData!;
     }
 
-    private void CompareResponses<T>(Response<T> actual, Response<T> expected)
+    private void CompareResponses<T>(Result<T> actual, Result<T> expected)
     {
-        Assert.That(actual.Success, Is.EqualTo(expected.Success), nameof(Response<T>.Success));
-        Assert.That(actual.Message, Is.EqualTo(expected.Message), nameof(Response<T>.Message));
-        Assert.That(actual.Data, Is.EqualTo(expected.Data), nameof(Response<T>.Data));
+        Assert.That(actual.Success, Is.EqualTo(expected.Success), nameof(Result<T>.Success));
+        Assert.That(actual.Message, Is.EqualTo(expected.Message), nameof(Result<T>.Message));
+        Assert.That(actual.Data, Is.EqualTo(expected.Data), nameof(Result<T>.Data));
     }
 }
