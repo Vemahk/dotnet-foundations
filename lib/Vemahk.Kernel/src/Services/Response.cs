@@ -1,11 +1,14 @@
-﻿namespace Vemahk.Kernel.Services;
+﻿using System.Text.Json.Serialization;
+
+namespace Vemahk.Kernel.Services;
 
 public readonly struct Response
 {
     public bool Success { get; }
     public string Message { get; }
 
-    internal Response(bool success, string? message = null)
+    [JsonConstructor]
+    public Response(bool success, string? message = null)
     {
         Success = success;
         Message = message ?? string.Empty;
@@ -25,7 +28,8 @@ public struct Response<T>
     public T Data { get; }
     public string Message { get; }
 
-    internal Response(bool success, T data, string? message = null)
+    [JsonConstructor]
+    public Response(bool success, T data, string? message = null)
     {
         Success = success;
 
