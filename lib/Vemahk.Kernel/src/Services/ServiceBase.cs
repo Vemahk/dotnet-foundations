@@ -14,6 +14,8 @@ public abstract class ServiceBase<TService>
 
     protected static Response Pass() => Response.Pass();
     protected static Response<T> Pass<T>(T data) => Response.Pass(data);
+    protected static Response<Optional<T>> Some<T>(T data) where T : notnull => Response.Some(data);
+    protected static Response<Optional<T>> None<T>() where T : notnull => Response.None<T>();
     protected static FailureResponse Fail(string reason) => Response.Fail(reason);
     protected static FailureResponse Fail(Response other) => Response.Fail(other);
 

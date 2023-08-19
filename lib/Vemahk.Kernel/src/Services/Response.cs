@@ -16,6 +16,8 @@ public readonly struct Response
 
     public static Response Pass() => new(true);
     public static Response<T> Pass<T>(T data) => new(true, data);
+    public static Response<Optional<T>> Some<T>(T data) where T : notnull => new(true, data);
+    public static Response<Optional<T>> None<T>() where T : notnull => new(true, Optional<T>.None);
     public static FailureResponse Fail(string reason) => new FailureResponse(reason);
     public static FailureResponse Fail(Response other) => new FailureResponse(other.Message);
 
