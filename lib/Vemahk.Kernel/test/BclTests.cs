@@ -11,7 +11,7 @@ public class BclTests
     }
 
     [Test]
-    public void ThenDefaultNullableFromGenericIsNull() 
+    public void ThenDefaultNullableFromGenericIsNull()
     {
         static T Result<T>() => default!;
         Assert.That(Result<int?>() is null, "int?");

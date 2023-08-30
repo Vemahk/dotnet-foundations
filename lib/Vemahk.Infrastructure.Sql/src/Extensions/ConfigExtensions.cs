@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+
 using Vemahk.Infrastructure.Extensions;
 
 namespace Vemahk.Infrastructure.Sql.Extensions;

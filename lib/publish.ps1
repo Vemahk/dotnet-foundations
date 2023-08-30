@@ -43,7 +43,7 @@ else {
 }
 
 $selected_projects | % {
-    dotnet pack $_ --output .\nuget-out --configuration Release --include-source --include-symbols;
+    dotnet pack $_ --output .\nuget-out --configuration Release --include-source;
 }
 
 dotnet nuget push "${nuget_out}\*.nupkg" --source "github" --skip-duplicate

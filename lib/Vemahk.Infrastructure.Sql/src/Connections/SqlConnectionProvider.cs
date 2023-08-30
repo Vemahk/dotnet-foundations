@@ -1,6 +1,8 @@
 ﻿using System.Collections.Concurrent;
 using System.Data.SqlClient;
+
 using Microsoft.Extensions.Configuration;
+
 using Vemahk.Infrastructure.Interface;
 using Vemahk.Infrastructure.Sql.Extensions;
 using Vemahk.Kernel.Exceptions;

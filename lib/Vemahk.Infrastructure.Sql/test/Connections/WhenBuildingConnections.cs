@@ -1,5 +1,5 @@
-﻿using Vemahk.Infrastructure.Sql.Connections;
-using Vemahk.Infrastructure.Interface;
+﻿using Vemahk.Infrastructure.Interface;
+using Vemahk.Infrastructure.Sql.Connections;
 
 namespace Vemahk.Infrastructure.Sql.Test.Connections;
 

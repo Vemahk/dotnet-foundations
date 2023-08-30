@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
+
 using Vemahk.Kernel.Services;
 
 namespace Infrastructure.Test.Services;
@@ -36,7 +37,7 @@ public class WhenUsingServices
                 Interlocked.Add(ref _thingsDone, i);
                 return Pass();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return UnexpectedError(e);
             }
@@ -44,4 +45,3 @@ public class WhenUsingServices
 
     }
 }
-

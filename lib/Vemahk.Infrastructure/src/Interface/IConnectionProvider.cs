@@ -8,7 +8,7 @@ public interface IConnectionProvider<T> where T : DbConnection
     T GetConnection(string connectionString);
 }
 
-public static class ConnectionProviderExtensions 
+public static class ConnectionProviderExtensions
 {
     /// <summary>
     /// Open a connection by connection name. Caller assumes the responsibility of closing the connection.

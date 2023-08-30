@@ -1,5 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
-using System.Text;
+﻿using System.Text;
+
+using Microsoft.Extensions.Configuration;
 
 namespace Vemahk.Infrastructure.Sql.Test;
 

@@ -24,11 +24,11 @@ public abstract class ServiceBase<TService>
 
     protected FailedResult ProcessException(LogLevel logLevel, Exception e, string? message)
     {
-        if(string.IsNullOrWhiteSpace(message))
+        if (string.IsNullOrWhiteSpace(message))
             Logger.Log(logLevel, e, string.Empty);
         else
             Logger.Log(logLevel, e, "{message}", message);
-            
+
         return Fail(message ?? e.Message);
     }
 }

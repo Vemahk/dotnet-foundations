@@ -1,5 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
+
+using Microsoft.Extensions.DependencyInjection;
+
 using Vemahk.Infrastructure.Interface;
 using Vemahk.Infrastructure.Sql.Connections;
 
