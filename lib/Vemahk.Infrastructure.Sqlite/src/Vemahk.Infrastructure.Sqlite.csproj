@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -8,22 +8,23 @@
   </PropertyGroup>
   
   <PropertyGroup>  
-    <Version>0.1.1</Version>
-    <PackageId>Vemahk.Kernel</PackageId>
-    <Title>Vemahk.Kernel</Title>
+    <Version>0.0.1</Version>
+    <PackageId>Vemahk.Infrastructure.Sqlite</PackageId>
+    <Title>Vemahk.Infrastructure.Sqlite</Title>
     <Authors>Vemahk</Authors>
-    <Description>Domain non-specific helpers for all my dotnet needs.</Description>
+    <Description>Common functions for connecting to and interacting with Sqlite DB files.</Description>
     <PackageProjectUrl>https://github.com/Vemahk/dotnet-foundations</PackageProjectUrl>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.10" />
     <PackageReference Include="PolySharp" Version="1.13.2+0596138b111ff552137684c6f7c3373805d2e3d2">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="System.Text.Json" Version="7.0.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Vemahk.Infrastructure\src\Vemahk.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

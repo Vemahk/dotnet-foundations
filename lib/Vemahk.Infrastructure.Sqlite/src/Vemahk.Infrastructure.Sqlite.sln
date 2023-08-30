@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sqlite", "Vemahk.Infrastructure.Sqlite.csproj", "{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sqlite.Test", "..\test\Vemahk.Infrastructure.Sqlite.Test.csproj", "{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{D379A8B1-CAB4-4AC8-8FE4-D9CEA51B824B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure", "..\..\Vemahk.Infrastructure\src\Vemahk.Infrastructure.csproj", "{1F269346-C3C8-47A3-BBAA-6D296F1E1F61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Kernel", "..\..\Vemahk.Kernel\src\Vemahk.Kernel.csproj", "{118C19C2-A98B-448D-8B58-6538195F7B22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Common.Test", "..\..\Vemahk.Common.Test\src\Vemahk.Common.Test.csproj", "{FC0EDCFC-764D-4419-91F2-11ED56FD34D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F269346-C3C8-47A3-BBAA-6D296F1E1F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F269346-C3C8-47A3-BBAA-6D296F1E1F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F269346-C3C8-47A3-BBAA-6D296F1E1F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F269346-C3C8-47A3-BBAA-6D296F1E1F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118C19C2-A98B-448D-8B58-6538195F7B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118C19C2-A98B-448D-8B58-6538195F7B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118C19C2-A98B-448D-8B58-6538195F7B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118C19C2-A98B-448D-8B58-6538195F7B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC0EDCFC-764D-4419-91F2-11ED56FD34D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0EDCFC-764D-4419-91F2-11ED56FD34D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0EDCFC-764D-4419-91F2-11ED56FD34D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0EDCFC-764D-4419-91F2-11ED56FD34D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F269346-C3C8-47A3-BBAA-6D296F1E1F61} = {D379A8B1-CAB4-4AC8-8FE4-D9CEA51B824B}
+		{118C19C2-A98B-448D-8B58-6538195F7B22} = {D379A8B1-CAB4-4AC8-8FE4-D9CEA51B824B}
+		{FC0EDCFC-764D-4419-91F2-11ED56FD34D7} = {D379A8B1-CAB4-4AC8-8FE4-D9CEA51B824B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBC8BBDA-7004-43F1-BDF6-83FB7FB6EFBB}
+	EndGlobalSection
+EndGlobal

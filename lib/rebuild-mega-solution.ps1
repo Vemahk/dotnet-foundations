@@ -1,0 +1,1 @@
+slngen **\*.csproj -o TheMegaSolution.sln --folders true --collapsefolders true --launch false --ignoreMainProject

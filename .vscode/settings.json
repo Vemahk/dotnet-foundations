@@ -1,3 +1,3 @@
 {
-    "dotnet.defaultSolution": "lib/Vemahk.Infrastructure.Sql/src/Vemahk.Infrastructure.Sql.sln"
+    "dotnet.defaultSolution": "lib/Vemahk.Infrastructure.Sqlite/src/Vemahk.Infrastructure.Sqlite.sln"
 }

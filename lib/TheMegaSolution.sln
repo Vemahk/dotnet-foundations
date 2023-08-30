@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Common.Test", "Vemahk.Common.Test\src\Vemahk.Common.Test.csproj", "{281CDC03-A016-4FFF-905A-FDCDAA881792}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sql", "Vemahk.Infrastructure.Sql\src\Vemahk.Infrastructure.Sql.csproj", "{B3AC590C-7626-46E4-9E23-EBF8DFD7C716}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sql.Test", "Vemahk.Infrastructure.Sql\test\Vemahk.Infrastructure.Sql.Test.csproj", "{A90E9EF2-D620-4177-916C-7CD87D03147D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sqlite", "Vemahk.Infrastructure.Sqlite\src\Vemahk.Infrastructure.Sqlite.csproj", "{A1AEB608-4017-4816-8647-FA4DB15B5AA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Sqlite.Test", "Vemahk.Infrastructure.Sqlite\test\Vemahk.Infrastructure.Sqlite.Test.csproj", "{2F47A949-6C9C-45F0-968D-250A65FB6D0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure", "Vemahk.Infrastructure\src\Vemahk.Infrastructure.csproj", "{2F7FE174-3342-4D1A-9748-AB0DC2998605}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Infrastructure.Test", "Vemahk.Infrastructure\test\Vemahk.Infrastructure.Test.csproj", "{DD299007-0703-4CF2-B763-51540C2A66AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Kernel", "Vemahk.Kernel\src\Vemahk.Kernel.csproj", "{0B3DD935-7DD3-47F7-A6A7-3F97BDE05190}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Kernel.Test", "Vemahk.Kernel\test\Vemahk.Kernel.Test.csproj", "{04D3B0AF-E502-4D7E-A005-225CF31B1BF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vemahk.Common.Test", "Vemahk.Common.Test", "{B88461EE-1F9E-498A-B60E-585422B12899}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vemahk.Infrastructure.Sql", "Vemahk.Infrastructure.Sql", "{CD5D330E-4563-4AD0-8D23-7D02D686ADBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vemahk.Infrastructure.Sqlite", "Vemahk.Infrastructure.Sqlite", "{4DE66F2D-609B-4FD1-B3CA-752E92EBFBAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vemahk.Infrastructure", "Vemahk.Infrastructure", "{FE4FC9AD-BD92-495A-BF7B-AF554198762E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vemahk.Kernel", "Vemahk.Kernel", "{460B3B52-4234-401E-B2A0-302AFD60D1EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{281CDC03-A016-4FFF-905A-FDCDAA881792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281CDC03-A016-4FFF-905A-FDCDAA881792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281CDC03-A016-4FFF-905A-FDCDAA881792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281CDC03-A016-4FFF-905A-FDCDAA881792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AC590C-7626-46E4-9E23-EBF8DFD7C716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AC590C-7626-46E4-9E23-EBF8DFD7C716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AC590C-7626-46E4-9E23-EBF8DFD7C716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AC590C-7626-46E4-9E23-EBF8DFD7C716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90E9EF2-D620-4177-916C-7CD87D03147D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90E9EF2-D620-4177-916C-7CD87D03147D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90E9EF2-D620-4177-916C-7CD87D03147D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90E9EF2-D620-4177-916C-7CD87D03147D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1AEB608-4017-4816-8647-FA4DB15B5AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AEB608-4017-4816-8647-FA4DB15B5AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AEB608-4017-4816-8647-FA4DB15B5AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AEB608-4017-4816-8647-FA4DB15B5AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F47A949-6C9C-45F0-968D-250A65FB6D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F47A949-6C9C-45F0-968D-250A65FB6D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F47A949-6C9C-45F0-968D-250A65FB6D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F47A949-6C9C-45F0-968D-250A65FB6D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7FE174-3342-4D1A-9748-AB0DC2998605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7FE174-3342-4D1A-9748-AB0DC2998605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7FE174-3342-4D1A-9748-AB0DC2998605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7FE174-3342-4D1A-9748-AB0DC2998605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD299007-0703-4CF2-B763-51540C2A66AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD299007-0703-4CF2-B763-51540C2A66AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD299007-0703-4CF2-B763-51540C2A66AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD299007-0703-4CF2-B763-51540C2A66AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3DD935-7DD3-47F7-A6A7-3F97BDE05190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3DD935-7DD3-47F7-A6A7-3F97BDE05190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3DD935-7DD3-47F7-A6A7-3F97BDE05190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3DD935-7DD3-47F7-A6A7-3F97BDE05190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D3B0AF-E502-4D7E-A005-225CF31B1BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D3B0AF-E502-4D7E-A005-225CF31B1BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D3B0AF-E502-4D7E-A005-225CF31B1BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D3B0AF-E502-4D7E-A005-225CF31B1BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{281CDC03-A016-4FFF-905A-FDCDAA881792} = {B88461EE-1F9E-498A-B60E-585422B12899}
+		{B3AC590C-7626-46E4-9E23-EBF8DFD7C716} = {CD5D330E-4563-4AD0-8D23-7D02D686ADBC}
+		{A90E9EF2-D620-4177-916C-7CD87D03147D} = {CD5D330E-4563-4AD0-8D23-7D02D686ADBC}
+		{A1AEB608-4017-4816-8647-FA4DB15B5AA6} = {4DE66F2D-609B-4FD1-B3CA-752E92EBFBAC}
+		{2F47A949-6C9C-45F0-968D-250A65FB6D0C} = {4DE66F2D-609B-4FD1-B3CA-752E92EBFBAC}
+		{2F7FE174-3342-4D1A-9748-AB0DC2998605} = {FE4FC9AD-BD92-495A-BF7B-AF554198762E}
+		{DD299007-0703-4CF2-B763-51540C2A66AB} = {FE4FC9AD-BD92-495A-BF7B-AF554198762E}
+		{0B3DD935-7DD3-47F7-A6A7-3F97BDE05190} = {460B3B52-4234-401E-B2A0-302AFD60D1EF}
+		{04D3B0AF-E502-4D7E-A005-225CF31B1BF5} = {460B3B52-4234-401E-B2A0-302AFD60D1EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE14441E-178D-4BA1-9007-C1FDAE2B0895}
+	EndGlobalSection
+EndGlobal

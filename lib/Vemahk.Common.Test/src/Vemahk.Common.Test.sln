@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Common.Test", "Vemahk.Common.Test.csproj", "{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vemahk.Common.Test.Test", "..\test\Vemahk.Common.Test.Test.csproj", "{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB0AB43-ECC4-47B9-9018-227A28BA7F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20C5EF2-20E1-4403-A318-5F6FCAC2D964}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBC8BBDA-7004-43F1-BDF6-83FB7FB6EFBB}
+	EndGlobalSection
+EndGlobal
