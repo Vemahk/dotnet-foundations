@@ -1,4 +1,5 @@
-﻿using Vemahk.Infrastructure.Interface;
+﻿using Vemahk.Common.Test;
+using Vemahk.Infrastructure.Interface;
 using Vemahk.Infrastructure.Sql.Connections;
 
 namespace Vemahk.Infrastructure.Sql.Test.Connections;
@@ -21,7 +22,7 @@ public class WhenBuildingConnections
 }
 """;
 
-        var config = TestHelper.BuildConfigFromJson(configJson);
+        var config = configJson.AsJsonConfiguration();
 
         var provider = new SqlConnectionProvider(config);
         await using var conn = await provider.OpenConnectionAsync(null);
@@ -44,7 +45,7 @@ public class WhenBuildingConnections
 }
 """;
 
-        var config = TestHelper.BuildConfigFromJson(configJson);
+        var config = configJson.AsJsonConfiguration();
         var provider = new SqlConnectionProvider(config);
         await using var conn = await provider.OpenConnectionAsync("LOCAL");
     }

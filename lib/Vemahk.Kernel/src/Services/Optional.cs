@@ -21,6 +21,15 @@ public readonly struct Optional<T> : IEquatable<Optional<T>>
         Value = value;
     }
 
+    public Optional<U> Map<U>(Func<T, U> mapFunc)
+        where U : notnull
+    {
+        if (!HasValue)
+            return Optional<U>.None;
+
+        return mapFunc(Value);
+    }
+
     public bool Equals(Optional<T> other)
     {
         if (!HasValue) return !other.HasValue;

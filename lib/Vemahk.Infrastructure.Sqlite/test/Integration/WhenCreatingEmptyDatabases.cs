@@ -1,13 +1,9 @@
 ﻿using Microsoft.Data.Sqlite;
 
-using SQLitePCL;
-
 using Vemahk.Common.Test;
 using Vemahk.Infrastructure.Interface;
 using Vemahk.Infrastructure.Sqlite.Connections;
 using Vemahk.Infrastructure.Sqlite.Extensions;
-
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Vemahk.Infrastructure.Sqlite.Test.Integration;
 
