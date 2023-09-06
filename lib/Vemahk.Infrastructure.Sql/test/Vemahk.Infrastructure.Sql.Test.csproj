@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Vemahk.Common.Test\src\Vemahk.Common.Test.csproj" />
     <ProjectReference Include="..\src\Vemahk.Infrastructure.Sql.csproj" />
   </ItemGroup>
 

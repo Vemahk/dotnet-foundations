@@ -14,4 +14,23 @@ public static class SqliteConnectionExtensions
 
         return command;
     }
+
+    public static async Task<int> GetDatabaseVersion(this SqliteConnection connection, CancellationToken token)
+    {
+#if NET7_0_OR_GREATER
+        await /*what a stupid reason to have to multitarget*/
+#endif
+        using var cmd = connection.GetTextCommand("PRAGMA user_version;");
+        var result = await cmd.ExecuteScalarAsync(token);
+        return Convert.ToInt32(result);
+    }
+
+    public static async Task SetDatabaseVersion(this SqliteConnection connection, int newVersion, CancellationToken token)
+    {
+#if NET7_0_OR_GREATER
+        await 
+#endif
+        using var cmd = connection.GetTextCommand($"PRAGMA user_version = {newVersion};");
+        await cmd.ExecuteNonQueryAsync(token);
+    }
 }

@@ -17,11 +17,11 @@ public static class ConnectionProviderExtensions
     /// <param name="connectionProvider"></param>
     /// <param name="connectionName">The name of the connection definition, not the connection string itself.</param>
     /// <returns></returns>
-    public static async Task<T> OpenConnectionAsync<T>(this IConnectionProvider<T> connectionProvider, string? connectionName) where T : DbConnection
+    public static async Task<T> OpenConnectionAsync<T>(this IConnectionProvider<T> connectionProvider, string? connectionName, CancellationToken token) where T : DbConnection
     {
         var connectionString = connectionProvider.GetConnectionString(connectionName);
         var conn = connectionProvider.GetConnection(connectionString);
-        await conn.OpenAsync();
+        await conn.OpenAsync(token);
         return conn;
     }
 }

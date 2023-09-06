@@ -25,7 +25,7 @@ public class WhenBuildingConnections
         var config = configJson.AsJsonConfiguration();
 
         var provider = new SqlConnectionProvider(config);
-        await using var conn = await provider.OpenConnectionAsync(null);
+        await using var conn = await provider.OpenConnectionAsync(null, default);
     }
 
     [Test]
@@ -47,6 +47,6 @@ public class WhenBuildingConnections
 
         var config = configJson.AsJsonConfiguration();
         var provider = new SqlConnectionProvider(config);
-        await using var conn = await provider.OpenConnectionAsync("LOCAL");
+        await using var conn = await provider.OpenConnectionAsync("LOCAL", default);
     }
 }
