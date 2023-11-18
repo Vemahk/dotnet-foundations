@@ -61,6 +61,9 @@ public class WhenCreatingEmptyDatabases
 }
 """.AsJsonConfiguration();
 
+        if (File.Exists("Version.db"))
+            File.Delete("Versionl.db");
+
         var connectionProvider = new SqliteConnectionProvider(config);
         await using var conn = await connectionProvider.OpenConnectionAsync("TESTDB", default);
         var version = await conn.GetDatabaseVersion(default);
