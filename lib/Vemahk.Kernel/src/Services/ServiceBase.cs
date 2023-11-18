@@ -18,6 +18,7 @@ public abstract class ServiceBase<TService>
     protected static Result<Optional<T>> None<T>() where T : notnull => Result.None<T>();
     protected static FailedResult Fail(string reason) => Result.Fail(reason);
     protected static FailedResult Fail(Result other) => Result.Fail(other);
+    protected static FailedResult Fail<T>(Result<T> other) => Result.Fail(other);
 
     protected FailedResult UnexpectedError(Exception e, string message = "An unexpected error occurred.") => ProcessException(LogLevel.Error, e, message);
     protected FailedResult CriticalError(Exception e, string message = "A critical error occurred.") => ProcessException(LogLevel.Critical, e, message);
