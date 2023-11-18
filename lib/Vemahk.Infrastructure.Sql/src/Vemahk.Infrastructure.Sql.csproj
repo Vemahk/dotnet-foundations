@@ -8,7 +8,7 @@
   </PropertyGroup>
   
   <PropertyGroup>  
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <PackageId>Vemahk.Infrastructure.Sql</PackageId>
     <Title>Vemahk.Infrastructure.Sql</Title>
     <Authors>Vemahk</Authors>

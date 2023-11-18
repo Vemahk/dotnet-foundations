@@ -8,7 +8,7 @@
   </PropertyGroup>
   
   <PropertyGroup>  
-    <Version>0.1.4</Version>
+    <Version>0.1.5</Version>
     <PackageId>Vemahk.Kernel</PackageId>
     <Title>Vemahk.Kernel</Title>
     <Authors>Vemahk</Authors>

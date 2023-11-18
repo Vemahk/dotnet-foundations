@@ -8,7 +8,7 @@
   </PropertyGroup>
   
   <PropertyGroup>  
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <PackageId>Vemahk.Infrastructure.Sqlite</PackageId>
     <Title>Vemahk.Infrastructure.Sqlite</Title>
     <Authors>Vemahk</Authors>
